@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <nav className="header">
         <div>
           <Link href={"/"}>
-            <span>Ahmad's Kitchen 🐡</span>
+            <span>Ahmad&apos;s Kitchen 🐡</span>
           </Link>
         </div>
       </nav>

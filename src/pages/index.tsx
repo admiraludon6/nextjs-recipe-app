@@ -33,7 +33,7 @@ export default function Home(props: HomeProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Welcome to Ahmad's Kitchen 🧑🏼‍🍳</h1>
+      <h1>Welcome to Ahmad&apos;s Kitchen 🧑🏼‍🍳</h1>
       <ul className='recipes-list'>
         { recipes?.length > 0 && recipes.map((recipe) => (
           <li key={recipe?._id} className="recipes-card">
