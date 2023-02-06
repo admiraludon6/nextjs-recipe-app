@@ -69,13 +69,15 @@ export default function OneRecipe(props: OneRecipeProps) {
 
 function RecipeContainer(props: OneRecipeProps) {
     
-    const {data, preview} = props;        
+    const {data, preview} = props;    
 
-    const recipe: Recipe = preview ? useDefinePreview(null, recipesQuery, {
-        params: { slug: data.recipe?.slug.current },
-        initialData: data,
-        enabled: preview
-    }) : data.recipe;    
+    // const recipe: Recipe = preview ? useDefinePreview(null, recipesQuery, {
+    //     params: { slug: data.recipe?.slug.current },
+    //     initialData: data,
+    //     enabled: preview
+    // }) : data.recipe;
+
+    const recipe: Recipe = data.recipe;
     
     const [likes, setLikes] = useState(recipe?.likes);
 
